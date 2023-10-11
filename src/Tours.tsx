@@ -8,7 +8,6 @@ interface Tour {
     price: string;
   }
 
-/*const Tours = ({ tours, removeTour } : {tours: any , removeTour: (id: number) => void}) =>*/
 const Tours = ({ tours, removeTour }: { tours: Tour[], removeTour: (id: number) => void }) =>  {
     return (
         <section>
@@ -25,7 +24,4 @@ const Tours = ({ tours, removeTour }: { tours: Tour[], removeTour: (id: number) 
     )
 }
 
-/*{tours.map((tour) => {
-    return <Tour key={tour.id} {...tour} removeTour={removeTour} />
-})}*/
 export default Tours;
